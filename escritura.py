@@ -125,6 +125,7 @@ for i in palabra:
     ##################################################################################################
     archivo.write(str(p1)+str(p2)+str(d1)+str(p3)+str(d2)+str(d3)+str(d4)+str(p4)+str(d5)+str(d6)+str(d7)+str(d8)+"\n")
     archivo1.write(str(p1)+str(p2)+str(a1)+str(p3)+str(a2)+str(a3)+str(a4)+str(p4)+str(a5)+str(a6)+str(a7)+str(a8)+"\n")
+    print("Revisar los archivos txt para ver el mensaje codificado")
     
 
         
