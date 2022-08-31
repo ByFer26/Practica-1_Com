@@ -119,3 +119,5 @@ with open(archivo) as objeto:
 
 archivo2.write(mensaje+"\n")
 archivo1.write(mensaje1+"\n")
+print("Su mensjae correcto es:",mensaje)
+print("Su mensaje incorrecto es:",mensaje1)
