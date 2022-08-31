@@ -19,8 +19,10 @@ correlativo=int
 correlativo1=int
 
 mensaje=str('') 
+mensaje1=str('')
 
-archivo1=open('Mensajes.txt','w')
+archivo1=open('Mensajes_incorrectos.txt','w')
+archivo2=open('Mensajes_correctos.txt','w')
 
 archivo='Hamming_incorrecto.txt'
 
@@ -75,6 +77,8 @@ with open(archivo) as objeto:
         e3=xor(p3,b4)
         e4=xor(p4,b8)
         er=(8*e4)+(4*e3)+(2*e2)+(1*e1)
+
+        correlativo1=(128*b3)+(64*b5)+(32*b6)+(16*b7)+(8*b9)+(4*b10)+(2*b11)+(1*b12)
             
         if er==3:
             if b3==1:b3=0
@@ -111,5 +115,7 @@ with open(archivo) as objeto:
 
         correlativo=(128*b3)+(64*b5)+(32*b6)+(16*b7)+(8*b9)+(4*b10)+(2*b11)+(1*b12)
         mensaje=mensaje+chr(correlativo)
+        mensaje1=mensaje1+chr(correlativo1)
 
-archivo1.write(mensaje+"\n")
+archivo2.write(mensaje+"\n")
+archivo1.write(mensaje1+"\n")
